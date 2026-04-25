@@ -1,43 +1,59 @@
-import Link from "next/link";
-
 function Footer(){
+
+  const items=[
+    {name:"Games",id:1},
+    {name:"Tournaments",id:2},
+    {name:"Community",id:3}
+    ];
+    const companyLinks=[
+      {name:"About",id:1},
+      {name:"Blog" ,id:2},
+      {name:"Contact",id:3}
+    ];
+    const  socialLinks=[
+      {name:"X",id:1},
+      {name:"Discord",id:2},
+      {name:"Twitch",id:3}
+    ];
   return(
     <>
-    <footer className="footer_section">
-        <div className="footer_col">
-          <h2>🎮GAME HUB</h2>
-          <p>The ultimate gaming platform for everyone</p>
+    <footer className="h-45 border-t border-t-gray-700 border-b border-b-gray-700 flex justify-around leading-9 text-left">
+
+        <div className="mt-4">
+          <h2 className="text-white text-2xl">🎮GAME HUB</h2>
+          <p className="text-gray-300 text-sm">The ultimate gaming platform for everyone</p>
         </div>
 
-        <div className="footer_col">
-        <h2>Platfrom</h2>
+        <div className="mt-4">
+        <h2 className="text-white text-lg">Platfrom</h2>
         <ul>
-          <li>Games</li>
-          <li>Tournaments</li>
-          <li>Community</li>
+          {items.map((item) =>(
+            <li key={item.id} className="text-gray-400 mr-2.5  text-sm hover:cursor-pointer hover:text-white mt-1">{item.name}</li>
+          ))}
+          
         </ul>
         </div>
 
-        <div className="footer_col">
-          <h2>Company</h2>
+        <div className="mt-4">
+          <h2 className="text-white text-lg">Company</h2>
           <ul>
-            <li>About</li>
-            <li>Blog</li>
-            <li>Contact</li>
+            {companyLinks.map((item)=>(
+              <li key={item.id} className="text-gray-400 mr-2.5  text-sm hover:cursor-pointer hover:text-white mt-1">{item.name}</li>
+            ))}
           </ul>
         </div>
 
-        <div className="footer_col">
-          <h2>Follow Us</h2>
-          <Link href="#">Twitter</Link>
-          <Link href="#">Discord</Link>
-          <Link href="#">Twitch</Link>
+        <div className=" mt-4">
+          <h2 className="text-white text-lg">Follow Us</h2>
+          {socialLinks.map((item)=>
+          <a key={item.id} className="text-gray-400 mr-2.5  text-sm hover:cursor-pointer hover:text-white">{item.name}</a>
+          )}
         </div>
 
         </footer>
 
-        <div className="fotter_bottom">
-              © 2026 GAME HUB. All rights reserved.
+        <div className="text-gray-400 text-center">
+              ©{new Date().getFullYear()} GAME HUB. All rights reserved.
         </div>
   </>
   )
