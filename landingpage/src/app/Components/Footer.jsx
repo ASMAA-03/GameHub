@@ -52,7 +52,7 @@ function Footer(){
 
         </footer>
 
-        <div className="text-gray-400 text-center">
+        <div className="text-gray-400 m-2 text-center">
               ©{new Date().getFullYear()} GAME HUB. All rights reserved.
         </div>
   </>
