@@ -9,8 +9,6 @@ import img6 from "../../../public/images/img06.png";
 function Trending() {
   return (
     <section className="flex flex-col gap-[55px] p-[35px] h-[90vh]">
-
-      {/* Header */}
       <div className="text-[rgb(193,187,187)] text-[1.2rem]">
         <div className="inline-block align-middle">
           <svg
