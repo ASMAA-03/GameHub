@@ -1,5 +1,4 @@
-import "./globals.css";
-
+import "../globals.css";
 export const metadata = {
   title: "GameHub",
   description: "Find trending games, track your favorites and level up your gaming experience.",

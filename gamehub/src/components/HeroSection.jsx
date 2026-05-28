@@ -1,3 +1,4 @@
+import Link from "next/link";
 function HeroSection() {
   return (
     <>
@@ -25,9 +26,12 @@ function HeroSection() {
             Discover thousands of games, compete in tournaments, and connect with millions of gamers worldwide. Your ultimate gaming destination awaits.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
-            <button className="px-5 py-2.5 rounded-lg border-2 border-[rgb(134,32,194)] bg-gradient-to-r from-[rgb(134,32,194)] via-[rgb(208,64,194)] to-[rgb(219,10,136)] cursor-pointer transition-all duration-200 text-xl text-white font-bold w-[200px] h-[75px] hover:shadow-[0px_10px_25px_rgb(94,34,114)] hover:scale-105">
-              Explore Games
-            </button>
+
+<Link href="/games">
+  <button className="px-5 py-2.5 rounded-lg border-2 border-[rgb(134,32,194)] bg-gradient-to-r from-[rgb(134,32,194)] via-[rgb(208,64,194)] to-[rgb(219,10,136)] cursor-pointer transition-all duration-200 text-xl text-white font-bold w-[200px] h-[75px] hover:shadow-[0px_10px_25px_rgb(94,34,114)] hover:scale-105">
+    Explore Games
+  </button>
+</Link>
             <button className="px-5 py-2.5 rounded-lg border-2 border-[rgb(110,16,164)] backdrop-blur-md bg-transparent text-[rgb(225,159,255)] text-xl font-semibold w-[200px] h-[75px] transition-all duration-200 hover:bg-[rgba(94,34,114,0.2)] cursor-pointer">
               Watch Tournaments
             </button>

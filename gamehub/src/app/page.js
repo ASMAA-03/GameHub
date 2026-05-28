@@ -1,9 +1,9 @@
-import Navbar from "@/app/Components/Navbar";
-import HeroSection from "@/app/Components/HeroSection";
-import Trending from "./Components/Trending";
-import Stats from "./Components/Stats";
-import Categories from "./Components/Categories";
-import Footer from "./Components/Footer";
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import Trending from "../components/Trending";
+import Stats from "../components/Stats";
+import Categories from "../components/Categories";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
