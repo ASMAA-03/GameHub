@@ -1,4 +1,3 @@
-
 import GameCard from "../../components/gamecard";
 import Navbar from "../../components/Navbar";
 
