@@ -23,6 +23,3 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000)
-
-## 👩‍💻 Author
-Asma'a Aldabbas — [GitHub](https://github.com/ASMAA-03)
