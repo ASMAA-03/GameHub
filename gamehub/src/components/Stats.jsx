@@ -1,9 +1,18 @@
 function Stats() {
   return (
-    <section className="h-[80vh] flex justify-center items-center">
-      <div className="flex gap-[25px] justify-around w-full  px-4">
-        
-        <div className="border border-[rgb(95,53,120)] h-[150px] w-[280px] p-3 bg-gradient-to-r from-[rgb(95,53,120)] via-[rgb(66,20,82)] to-[rgba(65,6,48,0.68)] rounded-lg flex flex-col">
+    <section
+      className="relative h-[80vh] flex justify-center items-center bg-cover bg-center "
+      style={{
+  backgroundImage: "url('/images/pok.jpg')",
+  backgroundSize: "50%",
+  backgroundPosition: "center",
+}} 
+    >
+      <div className="absolute inset-0 bg-black/50"></div>
+
+      <div className="relative flex gap-[25px] justify-around w-full px-4">
+
+        <div className="border border-[rgb(64,34,82)] h-[150px] w-[280px] p-3 bg-gradient-to-r from-[rgba(96,53,120,0.87)] via-[rgba(67,20,82,0.94)] to-[rgba(65,6,48,0.68)] rounded-lg flex flex-col">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-people h-12 w-[40px] m-0 text-[rgb(143,51,173)]" viewBox="0 0 16 16">
             <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
           </svg>
@@ -35,6 +44,7 @@ function Stats() {
           <h1 className="text-white text-2xl font-bold mt-1">35%</h1>
           <p className="text-gray-300 text-sm">Monthly Growth</p>
         </div>
+
       </div>
     </section>
   );
