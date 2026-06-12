@@ -1,7 +1,11 @@
+"use client";
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { useRouter } from "next/navigation";
 
 export default function Contact() {
+  const router = useRouter();
   return (
     <>
       <Navbar />
@@ -30,7 +34,11 @@ export default function Contact() {
             goals. Our team will help you find the right games and opportunities
             to make the most of your gaming journey.
           </p>
-          <button className="mt-8 px-6 py-3 bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-semibold rounded-lg transition">
+
+          <button
+            onClick={() => router.push("/games")}
+            className="mt-8 px-6 py-3 bg-fuchsia-500 hover:bg-fuchsia-600 text-white font-semibold rounded-lg transition"
+          >
             Start Your Gaming Adventure
           </button>
         </div>
