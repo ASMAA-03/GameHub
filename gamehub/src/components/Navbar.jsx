@@ -26,7 +26,7 @@ function Navbar() {
       </div>
 
       <ul className="flex items-center gap-9 list-none">
-        {["Home","Games", "Tournaments", "Community"].map((label) => (
+        {["Home","Games", "Tournaments", "Contact"].map((label) => (
           <li key={label}>
             <Link
               href={
