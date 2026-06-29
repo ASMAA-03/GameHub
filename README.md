@@ -6,7 +6,7 @@ A modern gaming platform built with **Next.js**, where users can explore games, 
 - 🏠 Home page with trending games and platform stats
 - 🎮 Games page — browse by category (Action, RPG, Strategy, Puzzle...)
 - 🏆 Tournaments page *(in progress)*
-- 👥 Community page *(in progress)*
+- 👥 Community page 
 - 🔐 Sign In page *(in progress)*
 - 📱 Responsive design *(in progress)*
 
