@@ -45,9 +45,12 @@ function HeroSection() {
                 Explore Games
               </button>
             </Link>
+            <Link href="/tournaments">
             <button className="px-5 py-2.5 rounded-lg border-2 border-[rgb(110,16,164)] backdrop-blur-md bg-transparent text-[rgb(225,159,255)] text-xl font-semibold w-[200px] h-[75px] transition-all duration-200 hover:bg-[rgba(94,34,114,0.2)] cursor-pointer">
               Watch Tournaments
             </button>
+            </Link>
+            
           </div>
         </div>
       </main>
