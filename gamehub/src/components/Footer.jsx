@@ -4,11 +4,10 @@ function Footer() {
   const items = [
     { name: "Games", id: 1, href: "/games" },
     { name: "Tournaments", id: 2, href: "/tournaments" },
-    { name: "Community", id: 3, href: "/community" },
   ];
 
   const companyLinks = [
-    { name: "About", id: 1, href: "/about" },
+    { name: "Home", id: 1, href: "/" },
     { name: "Contact", id: 3, href: "/contact" },
   ];
 
