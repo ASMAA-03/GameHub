@@ -32,7 +32,7 @@ return(
     <h1 className="text-7xl">PLAY TO EARN GAMES</h1>
   </div>
   <div className="flex gap-15 p-7">
-    <div className="border border-gray-500 h-[50vh] w-80 rounded-4xl p-5 bg-[rgba(57,0,114,0.126)] ">
+    <div className="border border-gray-500 h-[50vh] w-80 rounded-4xl p-5 bg-[rgba(57,0,114,0.126)] transition-transform duration-300 hover:-translate-y-2 cursor-pointer">
      
       <div className="flex flex-col items-center"> 
         <span className="text-gray-300 font-bold tracking-widest">Tournament</span>
@@ -67,7 +67,7 @@ return(
 
     </div>
 
-      <div className="border border-gray-500 h-[50vh] w-80 rounded-4xl p-5 bg-[rgba(57,0,114,0.126)]">
+      <div className="border border-gray-500 h-[50vh] w-80 rounded-4xl p-5 bg-[rgba(57,0,114,0.126)] transition-transform duration-300 hover:-translate-y-2 cursor-pointer">
      
       <div className="flex flex-col items-center"> 
         <span className="text-gray-200 font-bold tracking-widest">Tournament</span>
@@ -75,7 +75,7 @@ return(
       </div>
 
       <div>
-        <p className="text-center rounded-4xl mt-3 bg-[rgba(57,0,114,0.126)] py-0.5"><Trophy size={20} className="text-gray-400 inline mx-2"/>2 PRIZE PLACES</p>
+        <p className="text-center rounded-4xl mt-3 bg-[rgba(57,0,114,0.126)] py-0.5"><Trophy size={20} className="text-gray-400 inline mx-2"/>10 PRIZE PLACES</p>
       </div>
 <div className="flex flex-col gap-3 py-9">
 
@@ -100,13 +100,13 @@ return(
     </div>
     
 
-     <div className="border border-gray-500 h-[50vh] w-80 rounded-4xl p-5 bg-[rgba(57,0,114,0.126)]">
+     <div className="border border-gray-500 h-[50vh] w-80 rounded-4xl p-5 bg-[rgba(57,0,114,0.126)] transition-transform duration-300 hover:-translate-y-2 cursor-pointer">
       <div className="flex flex-col items-center"> 
         <span className="text-gray-200 font-bold tracking-widest">Tournament</span>
         <h2 className="text-purple-500 text-3xl font-bold">LUCKY CARD</h2>
       </div>
       <div>
-        <p className="text-center rounded-4xl mt-3 bg-[rgba(57,0,114,0.126)] py-0.5"><Trophy size={20} className="text-red-400 inline mx-2"/>1 PRIZE PLACES</p>
+        <p className="text-center rounded-4xl mt-3 bg-[rgba(57,0,114,0.126)] py-0.5"><Trophy size={20} className="text-red-400 inline mx-2"/>100 PRIZE PLACES</p>
       </div>
 <div className="flex flex-col gap-3 py-9">
   <div>
