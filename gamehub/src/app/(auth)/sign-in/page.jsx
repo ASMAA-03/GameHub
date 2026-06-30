@@ -1,4 +1,4 @@
-import Footer from "@/components/Footer";
+import Link from "next/link"
 export default function SignInPage() {
   return (
     <>
@@ -22,7 +22,9 @@ export default function SignInPage() {
             <label className="block text-purple-400/80 font-bold tracking-widest mb-1">Password :</label>
             <input type="text" name="human being" className="border border-gray-400/45 w-96 rounded-2xl h-12 p-5"></input>
             </div>
-            <button className="bg-purple-500/50 rounded-3xl p-3 text-3xl text-gray-300 mt-8 hover:opacity-95 cursor-pointer ">Sign in</button>
+            <Link href="/">
+              <button type="submit" className="bg-purple-500/50 rounded-3xl p-3 text-3xl text-gray-300 mt-8 hover:opacity-95 cursor-pointer w-full">Sign in</button>
+              </Link>
           </div>
         </form>
     </div>
