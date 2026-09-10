@@ -1,54 +1,105 @@
+"use client";
+import { useState } from "react";
 import Link from "next/link";
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  const links = [
+    { label: "Home", href: "/" },
+    { label: "Games", href: "/games" },
+    { label: "Tournaments", href: "/tournaments" },
+    { label: "Contact", href: "/contact" },
+  ];
+
   return (
-    <nav className="flex justify-between items-center px-4 py-3 bg-black/20">
-      <div className="pl-14 flex items-center gap-1">
+    <nav className="relative z-50 flex items-center justify-between bg-black/20 px-4 py-3 backdrop-blur-sm sm:px-6 lg:px-10">
+
+      <Link href="/" className="flex items-center gap-1">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="56"
-          height="36"
+          width="48"
+          height="34"
           fill="url(#logoGrad)"
-          className="inline-block align-middle"
           viewBox="0 0 16 16"
         >
           <defs>
-            <linearGradient id="logoGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+            <linearGradient
+              id="logoGrad"
+              x1="0%"
+              y1="100%"
+              x2="100%"
+              y2="0%"
+            >
               <stop offset="0%" stopColor="rgb(134,32,194)" />
               <stop offset="100%" stopColor="whitesmoke" />
             </linearGradient>
           </defs>
+
           <path d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434zM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567zM7.5 9.933l-2.75 1.571v3.134l2.75-1.571zm1 3.134 2.75 1.571v-3.134L8.5 9.933zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567zm2.242-2.433V3.504L8.5 5.076V8.21zM7.5 8.21V5.076L4.75 3.504v3.134zM5.258 2.643 8 4.21l2.742-1.567L8 1.076zM15 9.933l-2.75 1.571v3.134L15 13.067zM3.75 14.638v-3.134L1 9.933v3.134z" />
         </svg>
-        <h4 className="inline-block align-middle text-3xl font-bold cursor-pointer bg-gradient-to-br from-[rgb(134,32,194)] to-gray-100 bg-clip-text text-transparent">
+
+        <h4 className="bg-gradient-to-br from-[rgb(134,32,194)] to-gray-100 bg-clip-text text-2xl font-bold text-transparent sm:text-3xl">
           GameHub
         </h4>
-      </div>
-
-      <ul className="flex items-center gap-9 list-none">
-        {["Home","Games", "Tournaments", "Contact"].map((label) => (
-          <li key={label}>
+      </Link>
+      <ul className="hidden items-center gap-6 lg:flex">
+        {links.map((link) => (
+          <li key={link.label}>
             <Link
-              href={
-                label.toLowerCase() === "home"
-                  ? "/"
-                  : `/${label.toLowerCase()}`
-              }
-              className="text-[rgb(193,187,187)] text-base px-3 py-2 rounded-lg transition-colors duration-200 hover:text-[rgba(202,108,210,0.76)]"
+              href={link.href}
+              className="rounded-lg px-3 py-2 text-base text-gray-300 transition-colors duration-200 hover:text-purple-400"
             >
-              {label}
+              {link.label}
             </Link>
           </li>
         ))}
       </ul>
 
-      <div className="pr-4">
-        <Link href="/sign-in">
-        <button className="px-15 py-2.5 mr-4 rounded-lg border-2 border-[rgba(135,32,194,0.68)]  text-white font-bold text-lg cursor-pointer transition-all duration-200 hover:shadow-[0_2px_15px_rgb(134,32,194)]">
+      <div className="hidden lg:block">
+        <Link
+          href="/sign-in"
+          className="rounded-lg border-2 border-purple-700/70 px-8 py-2.5 text-base font-bold text-white transition-all duration-200 hover:shadow-[0_2px_15px_rgb(134,32,194)]"
+        >
           Sign In
-        </button>
         </Link>
       </div>
+
+      <button
+        onClick={() => setOpen(!open)}
+        className="text-2xl text-white lg:hidden"
+        aria-label="Toggle menu"
+      >
+        {open ? "✕" : "☰"}
+      </button>
+
+      {open && (
+        <div className="absolute left-0 top-full w-full border-t border-white/10 bg-black/95 px-6 py-5 backdrop-blur-md lg:hidden">
+          <ul className="flex flex-col gap-2">
+            {links.map((link) => (
+              <li key={link.label}>
+                <Link
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="block rounded-lg px-3 py-3 text-gray-300 transition-colors hover:bg-purple-500/10 hover:text-purple-400"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+
+            <li className="mt-2 border-t border-white/10 pt-4">
+              <Link
+                href="/sign-in"
+                onClick={() => setOpen(false)}
+                className="block rounded-lg border border-purple-600/70 px-4 py-3 text-center font-bold text-white transition hover:bg-purple-600/20"
+              >
+                Sign In
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }
