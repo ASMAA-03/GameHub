@@ -6,7 +6,7 @@ A modern gaming platform built with **Next.js**, where users can explore games, 
 -  Home page with trending games and platform stats
 - Games page 
 - Tournaments page 
-- Community page 
+- Conntact page 
 - Sign In page *(in progress)*
 - Responsive design *(in progress)*
 
