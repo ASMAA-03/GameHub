@@ -44,7 +44,7 @@ function Navbar() {
 
       <div className="pr-4">
         <Link href="/sign-in">
-        <button className="px-5 py-2.5 mr-4 rounded-lg border-2 border-[rgb(134,32,194)] bg-gradient-to-br from-[rgb(134,32,194)] via-[rgb(208,64,194)] to-[rgb(219,10,136)] text-white font-bold text-lg cursor-pointer transition-all duration-200 hover:shadow-[0_2px_15px_rgb(134,32,194)]">
+        <button className="px-15 py-2.5 mr-4 rounded-lg border-2 border-[rgba(135,32,194,0.68)]  text-white font-bold text-lg cursor-pointer transition-all duration-200 hover:shadow-[0_2px_15px_rgb(134,32,194)]">
           Sign In
         </button>
         </Link>
