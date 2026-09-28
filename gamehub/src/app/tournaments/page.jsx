@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Trophy, ArrowUpRight } from "lucide-react";
@@ -40,8 +39,6 @@ export default function Tournaments() {
   return (
     <>
       <Navbar />
-
-      {/* ================= HERO ================= */}
       <section className="relative min-h-[75vh] overflow-hidden text-gray-200">
 
         <div className="absolute inset-0 bg-black/40" />
@@ -86,16 +83,12 @@ export default function Tournaments() {
 
         <div className="absolute bottom-0 left-0 h-32 w-full bg-gradient-to-t from-black to-transparent" />
       </section>
-
-
-      {/* ================= TOURNAMENTS ================= */}
       <section className="min-h-[90vh] bg-black px-5 py-14 text-amber-50">
 
-        {/* Section Header */}
         <div className="flex flex-col items-center text-center">
 
           <p className="w-80 tracking-[8px] text-fuchsia-400">
-            ⋆ OUR TOURNAMENT ⋆
+            OUR TOURNAMENT
           </p>
 
           <h1 className="mt-4 text-4xl font-bold tracking-wide text-white sm:text-5xl md:text-6xl">
@@ -105,7 +98,6 @@ export default function Tournaments() {
         </div>
 
 
-        {/* ================= CARDS ================= */}
         <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-6 pt-12">
 
           {tournaments.map((tournament, index) => (
@@ -124,7 +116,6 @@ export default function Tournaments() {
               "
             >
 
-              {/* Top accent */}
               <div
                 className={`
                   h-[3px] w-full
@@ -138,11 +129,9 @@ export default function Tournaments() {
 
               <div className="p-6">
 
-                {/* Card Header */}
                 <div className="flex items-start justify-between">
 
                   <div>
-
                     <p className="text-[11px] font-semibold uppercase tracking-[4px] text-gray-500">
                       Tournament
                     </p>
@@ -184,9 +173,6 @@ export default function Tournaments() {
                   </div>
 
                 </div>
-
-
-                {/* Prize information */}
                 <div className="mt-7 flex items-center justify-between border-y border-white/10 py-4">
 
                   <div>
@@ -220,8 +206,6 @@ export default function Tournaments() {
 
                 </div>
 
-
-                {/* Players */}
                 <div className="mt-5">
 
                   <p className="mb-3 text-[10px] uppercase tracking-[3px] text-gray-500">
@@ -274,9 +258,6 @@ export default function Tournaments() {
                   </div>
 
                 </div>
-
-
-                {/* Join button */}
                 <button
                   className="
                     mt-6 flex w-full
