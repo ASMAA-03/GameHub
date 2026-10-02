@@ -88,15 +88,7 @@ function Navbar() {
               </li>
             ))}
 
-            <li className="mt-2 border-t border-white/10 pt-4">
-              <Link
-                href="/sign-in"
-                onClick={() => setOpen(false)}
-                className="block rounded-lg border border-purple-600/70 px-4 py-3 text-center font-bold text-white transition hover:bg-purple-600/20"
-              >
-                Sign In
-              </Link>
-            </li>
+           
           </ul>
         </div>
       )}
