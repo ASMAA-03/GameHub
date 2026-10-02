@@ -56,14 +56,6 @@ function Navbar() {
         ))}
       </ul>
 
-      <div className="hidden lg:block">
-        <Link
-          href="/sign-in"
-          className="rounded-lg border-2 border-purple-700/70 px-8 py-2.5 text-base font-bold text-white transition-all duration-200 hover:shadow-[0_2px_15px_rgb(134,32,194)]"
-        >
-          Sign In
-        </Link>
-      </div>
 
       <button
         onClick={() => setOpen(!open)}
