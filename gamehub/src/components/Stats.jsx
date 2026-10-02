@@ -1,7 +1,7 @@
 function Stats() {
   return (
     <section
-      className="h-[288px] border-8 border-purple-400 md:relative h-[100vh] flex justify-center items-center bg-cover bg-center bg-no-repeat "
+  className="h-[288px] md:h-[100vh] md:relative flex justify-center items-center bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: "url('/images/lalala.gif')",
         backgroundSize: "100%",
@@ -10,7 +10,7 @@ function Stats() {
     >
       <div className="absolute inset-0 bg-black/50"></div>
 
-      <div className="hidden md:relative flex gap-[25px] justify-around w-full px-4">
+      <div className="hidden md:relative md:flex gap-[25px] justify-around w-full px-4">
 
         <div className="border border-[rgba(64,34,82,0.81)] h-[150px] w-[280px] p-3 bg-gradient-to-r from-[rgba(97,53,120,0.77)] via-[rgba(67,20,82,0.84)] to-[rgba(65,6,48,0.68)] rounded-lg flex flex-col">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-people h-12 w-[40px] m-0 text-[rgb(143,51,173)]" viewBox="0 0 16 16">
