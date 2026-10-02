@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <main className="relative w-full overflow-hidden h-[80vh]">
+    <main className="relative w-full overflow-hidden min-h-[80vh] ">
 
       <div
         className="absolute inset-0 z-0"
@@ -41,7 +41,7 @@ export default function HeroSection() {
       />
 
       <div
-        className="absolute top-[30%] left-1/2
+        className="top-[20%] absolute md:top-[30%] left-1/2
                    -translate-x-1/2
                    flex flex-col justify-center items-center
                    text-center max-w-4xl w-full px-4 z-30"
@@ -50,14 +50,14 @@ export default function HeroSection() {
           Level Up Your Gaming
         </h1>
 
-        <p className="text-lg md:text-xl text-white/70 leading-relaxed my-4 max-w-2xl">
+        <p className="text-lg mb-0 md:text-xl text-white/70 leading-relaxed my-4 max-w-2xl">
           Discover thousands of games, compete in tournaments, and connect
           with millions of gamers worldwide. Your ultimate gaming destination
           awaits.
         </p>
 
         
-<div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
+<div className="flex flex-col md:flex-row gap-4 justify-center mt-6">
 
   <Link href="/games">
     <button
