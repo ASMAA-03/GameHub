@@ -68,7 +68,6 @@ function Trending() {
               min-h-[405px]
               border-2 border-[rgb(157,63,221)]
               rounded-[4px]
-              overflow-hidden
               transition duration-500
               hover:-translate-y-3
               cursor-pointer
@@ -82,7 +81,6 @@ function Trending() {
                 h-[220px]
                 sm:h-[230px]
                 md:h-[240px]
-                overflow-hidden
               "
             >
               <Image
@@ -104,9 +102,12 @@ function Trending() {
                 width={260}
                 height={350}
                 className="
+                  absolute
+                  bottom-0
                   object-contain
                   scale-0
                   group-hover:scale-100
+                  group-hover:-translate-y-0
                   transition-all
                   duration-500
                 "
@@ -127,7 +128,7 @@ function Trending() {
                 </div>
               </div>
 
-             <div className="mt-2 flex items-center gap-2">
+              <div className="mt-2 flex items-center gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
@@ -149,7 +150,7 @@ function Trending() {
                 <p className="text-sm sm:text-base text-[rgb(193,187,187)]">
                   {card.players}
                 </p>
-                 </div>
+              </div>
             </div>
 
             <button
