@@ -9,8 +9,7 @@ A modern gaming platform built with **Next.js**, where users can explore games, 
 - Games page 
 - Tournaments page 
 - Conntact page 
-- Sign In page *(in progress)*
-- Responsive design *(in progress)*
+- Responsive design
 
 ## Built With
 - [Next.js](https://nextjs.org/)
